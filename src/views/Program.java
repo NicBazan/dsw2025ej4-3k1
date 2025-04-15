@@ -11,6 +11,6 @@ public class Program {
     public static void main(String[] args) throws IllegalArgumentException, InvalidPropertiesFormatException {
         Persistencia.inicializar();
         views.Controlador c = new Controlador();
-        
+        c.iniciar();
     }
 }

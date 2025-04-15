@@ -14,13 +14,13 @@ import views.AnimalViewModel;
 import views.ComidaViewModel;
 import views.ComidaViewModel;
 import views.ListarAnimalesView;
-import views.VistaAgregar;
+import views.AgregarAnimal;
 import views.VistaMenu;
 
 public class Controlador implements ActionListener {
 
     private data.Persistencia persistencia;
-    private VistaAgregar vistaAgregar;
+    private AgregarAnimal vistaAgregar;
     private VistaMenu vistaMenuInicio;
     private ListarAnimalesView vistaAnimales;
 
@@ -32,7 +32,7 @@ public class Controlador implements ActionListener {
         persistencia = new Persistencia();
 
         vistaAnimales = new ListarAnimalesView();
-        vistaAgregar = new VistaAgregar();
+        vistaAgregar = new AgregarAnimal();
         vistaAgregar.cargarComboPais(persistencia);
 
         vistaMenuInicio = new VistaMenu();
